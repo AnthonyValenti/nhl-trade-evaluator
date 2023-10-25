@@ -1,0 +1,115 @@
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.wrapper{
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    padding: 10px;
+    width: 90%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+}
+.topWrap{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+h2{
+    color: #E0E2DB;
+    font-weight: 900;
+}
+h3{
+    font-size: 25px;
+    margin-left: 5%;
+}
+
+.tradePieceContainer{
+    width: 100%;
+}
+
+.tradePiece{
+    display: flex;
+    border-radius: 10px;
+    width: 100%;
+    min-width: fit-content;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    margin-top: 2%;
+    font-size: 30px;
+    font-weight: 900;
+    background-color: #E0E2DB;
+    opacity: 0.9;
+    border-style: none;
+    
+}
+.tradePiece:hover{
+    background-color: #D2D4C8;
+    opacity: 0.9;
+}
+
+img{
+    margin-left: 5%;
+    height: 90%;
+}
+.bottomContainer{
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+.playerSearch{
+    font-size: 18px;
+    font-weight: 900;
+    color: #30343F;
+    background-color: #E0E2DB;
+    border-style: hidden;
+    border-radius: 5px;
+
+}
+
+.addButton{
+    width: fit-content;
+    margin-left: 5%;
+    font-size: 18px;
+    font-weight: 900;
+    color: #30343F;
+    background-color: #E0E2DB;
+    border-style: hidden;
+    border-radius: 10px;
+
+}
+
+.addButton:hover{
+    background-color: #D2D4C8;
+    opacity: 0.9;
+}
+
+
+
+.suggestionBox{
+    display: flex;
+    background-color: #E0E2DB;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: -1%;
+
+}
+.suggestionBox:hover{
+    background-color: #D2D4C8;
+
+}
