@@ -137,10 +137,10 @@ const Table = () => {
             </div>
           ) : null}
         </div>
-        <button className="addButton" onClick={addPlayer}>
-          Add
-        </button>
       </div>
+      <button className="addButton" onClick={addPlayer}>
+          Add
+      </button>
     </div>
   );
 };

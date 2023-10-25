@@ -1,7 +1,5 @@
 .container{
-    justify-content: center;
-    align-items: center;
-    width: 45%;
+    width: 44%;
 
 }
 .wrapper{
@@ -77,14 +75,14 @@ img{
 
 .addButton{
     width: fit-content;
-    height: 5%;
-    margin-left: 5%;
+    height: 10%;
     font-size: 18px;
     font-weight: 900;
     color: #30343F;
     background-color: #E0E2DB;
     border-style: hidden;
     border-radius: 10px;
+    margin-top: 10%;
 
 }
 
