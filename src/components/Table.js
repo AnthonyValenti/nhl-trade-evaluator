@@ -5,6 +5,7 @@ import playerData from "../data/playerData.json";
 
 const Table = () => {
   const [totalWar, setWar] = useState(0);
+  const [totalCap, setCap] = useState(0);
   const [players, setPlayers] = useState([]);
   const [playersIds, setPlayersIds] = useState([]);
   const [dataArray, setDataArray] = useState([]);
@@ -28,10 +29,18 @@ const Table = () => {
 
   useEffect(() => {
     let sum=0;
+    let cap=0;
     for (const player of players){
       sum+=player.war;
+      cap+=player.cap;
     }
     setWar(Number(sum.toFixed(2)));
+    const formattedCap = cap.toLocaleString('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      minimumFractionDigits: 0,
+    });
+    setCap(formattedCap);
 
   }, [players]);
 
@@ -104,6 +113,8 @@ const Table = () => {
       <div className="wrapper">
         <div className="topWrap">
           <h2>Total WAR: {totalWar}</h2>
+          <h2>Cap Hit: {totalCap}</h2>
+
         </div>
         <div className="tradePieceContainer">
           {players.map((player, index) => (
@@ -141,6 +152,7 @@ const Table = () => {
       <button className="addButton" onClick={addPlayer}>
           Add
       </button>
+
     </div>
   );
 };

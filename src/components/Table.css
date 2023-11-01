@@ -11,10 +11,9 @@
     align-items: center;
 }
 .topWrap{
-    padding: 10px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items:first baseline;
     
 }
 h2{
@@ -60,11 +59,12 @@ img{
 }
 .searchContainer{
     width: 100%;
+    height: 9vi;
 }
 .playerSearch{
     width: 100%;
-    font-size: 100%;
-    height: 100%;
+    font-size: 90%;
+    height: 40%;
     font-weight: 900;
     color: #30343F;
     background-color: #E0E2DB;
@@ -95,11 +95,11 @@ img{
 
 .suggestionBox{
     background-color: #E0E2DB;
-    height: 80%;
+    height: 3vi;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     font-weight: 900;
-    font-size: 100%;
+    font-size: 80%;
     margin-bottom: 5%;
 
 }
